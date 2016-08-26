@@ -74,6 +74,22 @@ link buscar(ListaDupla l, int item) {
   }
   return NULL;
 }
+
+
+void Ordena(ListaDupla *lista){
+   apontador aux,aux2;
+   tipoitem k;
+   for(aux=lista->primeiro->next;aux!=NULL;aux=aux->next){
+       for(aux2=aux->next;aux2!=NULL;aux2=aux2->next){
+           if((aux->item.pontuacao)<(aux2->item.pontuacao)){
+                k=aux->item;
+                aux->item=aux2->item;
+                aux2->item=k;
+           }
+       }
+   }
+} 
+
 /* 
 void insereAntes (ListaDupla l, link x, link t);
 */
