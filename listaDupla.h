@@ -20,7 +20,9 @@ void insereDepois (ListaDupla l, link x, link t);
 void insereAntes (ListaDupla l, link x, link t);
 link removeNo (link x);
 void imprime(ListaDupla l);
+void ordena(ListaDupla l);
 void imprimeReverso(ListaDupla l);
+void menorno(listaDupla 1);
 void destroiLista(ListaDupla l);
 
 #endif
